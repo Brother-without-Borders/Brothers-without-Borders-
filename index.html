@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brothers Without Borders - Building brotherhood, leadership, unity and positive change in Liberia.">
+  <title>Brothers Without Borders | BWB Liberia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-container">
+    <a href="#home" class="logo">BWB<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#who-we-are">Who We Are</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#activities">Activities</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <a href="member.html">Member</a>
+      <a href="#membership" class="nav-button">Member Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- FULL-VIEW HOMEPAGE IMAGE -->
+  <section class="hero" id="home">
+    <img class="hero-image" src="bb.jpg" alt="Brothers Without Borders members">
+
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <p class="hero-label">BROTHERS WITHOUT BORDERS · LIBERIA</p>
+        <h1>One Brotherhood. One Vision. One Future.</h1>
+        <p>
+          Building unity, leadership, discipline, and positive change
+          among boys and men across Liberia.
+        </p>
+        <div class="hero-buttons">
+          <a href="#who-we-are" class="btn btn-primary">Discover Who We Are</a>
+          <a href="#membership" class="btn btn-outline">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="section" id="who-we-are">
+    <div class="container">
+      <div class="section-heading">
+        <span>ABOUT BWB</span>
+        <h2>Who We Are</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <h3>A Brotherhood Beyond Borders</h3>
+          <p>
+            Brothers Without Borders is a brotherhood organization committed
+            to bringing boys and men together through unity, discipline,
+            leadership, personal development, and community service.
+          </p>
+          <p>
+            We believe that when brothers support one another, they can
+            build stronger individuals, communities, and a better future.
+          </p>
+        </div>
+        <div class="about-highlight">
+          <h3>Our Vision</h3>
+          <p>To build a united generation of responsible, disciplined and empowered brothers.</p>
+          <h3>Our Mission</h3>
+          <p>To promote brotherhood, leadership, mentorship, personal growth and positive community impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-light" id="gallery">
+    <div class="container">
+      <div class="section-heading">
+        <span>OUR MEMORIES</span>
+        <h2>Gallery</h2>
+        <p>Moments, activities and memories from our brotherhood.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="pic1.jpg" alt="BWB gallery photo 1">
+        <img src="pic2.jpg" alt="BWB gallery photo 2">
+        <img src="pic3.jpg" alt="BWB gallery photo 3">
+        <img src="pic4.jpg" alt="BWB gallery photo 4">
+        <img src="pic5.jpg" alt="BWB gallery photo 5">
+        <img src="pic6.jpg" alt="BWB gallery photo 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- BROTHER ACTIVITIES -->
+  <section class="section" id="activities">
+    <div class="container">
+      <div class="section-heading">
+        <span>WHAT WE DO</span>
+        <h2>Brother Activities</h2>
+        <p>Explore our activities and the work we do together.</p>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <video controls poster="images/activity-1.jpg">
+            <source src="vid1.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <h3>Brotherhood Activities</h3>
+          <p>Highlights from our brotherhood activities.</p>
+        </div>
+
+        <div class="video-card">
+          <video controls poster="images/activity-2.jpg">
+            <source src="vid2.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+          <h3>Community Engagement</h3>
+          <p>Our participation in community development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS -->
+  <section class="section section-light" id="events">
+    <div class="container">
+      <div class="section-heading">
+        <span>STAY CONNECTED</span>
+        <h2>Upcoming Events</h2>
+        <p>Stay informed about upcoming BWB programs and gatherings.</p>
+      </div>
+      <div id="eventsList" class="events-grid">
+        <p>Loading upcoming events...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section class="section" id="membership">
+    <div class="container">
+      <div class="section-heading">
+        <span>JOIN THE BROTHERHOOD</span>
+        <h2>Member Login</h2>
+        <p>Access your BWB member account.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="loginForm">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" required>
+
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required>
+
+          <button type="submit" class="btn btn-primary full-button">Login</button>
+          <p id="loginMessage" class="form-message"></p>
+        </form>
+
+        <div class="form-divider"></div>
+
+        <h3>Not yet a member?</h3>
+        <p>Submit a membership application to join Brothers Without Borders.</p>
+
+        <form id="applyForm">
+          <label for="appName">Full Name</label>
+          <input type="text" id="appName" required>
+
+          <label for="appEmail">Email Address</label>
+          <input type="email" id="appEmail" required>
+
+          <label for="appPhone">Phone Number</label>
+          <input type="tel" id="appPhone" required>
+
+          <label for="appReason">Why do you want to join BWB?</label>
+          <textarea id="appReason" rows="4" required></textarea>
+
+          <label for="appPassword">Create Password</label>
+          <input type="password" id="appPassword" minlength="8" required>
+
+          <button type="submit" class="btn btn-primary full-button">Apply for Membership</button>
+          <p id="applyMessage" class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-light" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Contact Us</h2>
+        <p>Have a question or want to connect with our organization?</p>
+      </div>
+
+      <div class="form-card">
+        <form id="contactForm">
+          <label for="contactName">Your Name</label>
+          <input type="text" id="contactName" required>
+
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" required>
+
+          <label for="contactSubject">Subject</label>
+          <input type="text" id="contactSubject" required>
+
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary full-button">Send Message</button>
+          <p id="contactResponse" class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="#home" class="footer-logo">BROTHERS WITHOUT BORDERS</a>
+    <p>Building brotherhood. Inspiring leadership. Creating positive change.</p>
+    <p class="copyright">© 2026 Brothers Without Borders. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

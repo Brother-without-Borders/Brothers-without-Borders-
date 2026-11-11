@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Brotherhood | Brothers Without Borders</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f5f8;
+    padding: 25px 18px 40px;
+    color: #172438;
+}
+
+/* TOP HEADER */
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-bar h1 {
+    font-size: 30px;
+    color: #071629;
+    font-weight: 800;
+}
+
+/* BUTTON */
+.btn {
+    background: #071629;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d6a63e;
+    color: #071629;
+    transform: translateY(-2px);
+}
+
+/* TEAM GRID */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* MEMBER CARD */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 22px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e8ebef;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.13);
+}
+
+/* IMAGE AREA */
+.image-area {
+    width: 100%;
+    height: 320px;
+    background: #dce2e9;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.card:hover .image-area img {
+    transform: scale(1.05);
+}
+
+/* MEMBER INFORMATION */
+.member-info {
+    padding: 20px 12px 24px;
+}
+
+.card h2 {
+    font-size: 21px;
+    color: #071629;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #b18425;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* BOTTOM */
+.bottom-bar {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+/* TABLET */
+@media (max-width: 950px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .image-area {
+        height: 300px;
+    }
+}
+
+/* PHONE */
+@media (max-width: 600px) {
+    body {
+        padding: 18px 13px 30px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .top-bar h1 {
+        font-size: 25px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .image-area {
+        height: 210px;
+    }
+
+    .member-info {
+        padding: 14px 7px 17px;
+    }
+
+    .card h2 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 360px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-area {
+        height: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+    <h1>Brothers From The Hood</h1>
+    <a href="index.html" class="btn">← Back to Home</a>
+</div>
+
+<div class="team-grid">
+
+    <div class="card">
+        <div class="image-area">
+            <img src="Gaba.jpg" alt="Sadayah Davis">
+        </div>
+        <div class="member-info">
+            <h2>Sadayah Davis</h2>
+            <p>Gaba</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="canto.jpg" alt="Anthony Tokpah">
+        </div>
+        <div class="member-info">
+            <h2>Anthony Tokpah</h2>
+            <p>Canto</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person3.jpg" alt="Lawrence Jones">
+        </div>
+        <div class="member-info">
+            <h2>Lawrence Jones</h2>
+            <p>Quasar</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person4.jpg" alt="Joshua Pewee">
+        </div>
+        <div class="member-info">
+            <h2>Joshua Pewee</h2>
+            <p>Jamican</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="markie.jpg" alt="Mark Leeway">
+        </div>
+        <div class="member-info">
+            <h2>Mark Leeway</h2>
+            <p>Markie</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person6.jpg" alt="Naxion Sanga">
+        </div>
+        <div class="member-info">
+            <h2>Naxion Sanga</h2>
+            <p>Speecuracy</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person7.jpg" alt="Mulbah Akoi">
+        </div>
+        <div class="member-info">
+            <h2>Mulbah Akoi</h2>
+            <p>Baby Twasa</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person8.jpg" alt="Prince M. Theo">
+        </div>
+        <div class="member-info">
+            <h2>Prince M. Theo</h2>
+            <p>Black Prince</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person9.jpg" alt="Smith Jackson">
+        </div>
+        <div class="member-info">
+            <h2>Smith Jackson</h2>
+            <p>Saresa</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person10.jpg" alt="Alpha Sanga">
+        </div>
+        <div class="member-info">
+            <h2>Alpha Sanga</h2>
+            <p>Brother</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image-area">
+            <img src="images/person11.jpg" alt="Emmanuel T. Kollie">
+        </div>
+        <div class="member-info">
+            <h2>Emmanuel T. Kollie</h2>
+            <p>Accuracy</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="bottom-bar">
+    <a href="index.html" class="btn">← Back to Home</a>
+</div>
+
+</body>
+</html>

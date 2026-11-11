@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BWB Administrator Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <span class="logo">BWB</span>
+    BROTHERS WITHOUT BORDERS — ADMIN
+  </div>
+  <button id="logout" class="btn">LOG OUT</button>
+</header>
+
+<main class="section">
+
+  <p class="eyebrow">ORGANIZATION MANAGEMENT</p>
+  <h1>Administrator Dashboard</h1>
+
+  <section class="section pale">
+    <h2>Membership Applications</h2>
+    <div id="pending">Loading applications...</div>
+  </section>
+
+  <section class="section">
+    <h2>Publish Announcement</h2>
+
+    <form id="announcementForm" class="panel">
+      <label>Announcement Title</label>
+      <input name="title" required>
+
+      <label>Announcement Message</label>
+      <textarea name="body" rows="5" required></textarea>
+
+      <button class="btn">PUBLISH ANNOUNCEMENT</button>
+      <p id="announcementStatus" class="status"></p>
+    </form>
+  </section>
+
+  <section class="section pale">
+    <h2>Add Upcoming Event</h2>
+
+    <form id="eventForm" class="panel">
+      <label>Event Name</label>
+      <input name="title" required>
+
+      <label>Event Date</label>
+      <input name="eventDate" type="date">
+
+      <label>Venue</label>
+      <input name="venue">
+
+      <label>Event Description</label>
+      <textarea name="description" rows="4" required></textarea>
+
+      <button class="btn">ADD EVENT</button>
+      <p id="eventStatus" class="status"></p>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Contact Messages</h2>
+    <div id="messages">Loading messages...</div>
+  </section>
+
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
